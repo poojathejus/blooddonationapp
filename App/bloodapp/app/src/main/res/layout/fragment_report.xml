@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/oldreportbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Old Report" />
+
+        <Button
+            android:id="@+id/donationdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Date wise Report" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/spinlayoutreport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/roundedbutton_red2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingHorizontal="4dp"
+            android:text="Donation Date"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/primaryTextColor" />
+
+        <Spinner
+            android:id="@+id/donationdatespin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewdonors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Student">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/student_registration_30px"
+                    android:title="@string/menu_home" />
+
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/qr_code_26px"
+                    android:title="@string/menu_slideshow" />
+                <item
+                    android:id="@+id/nav_tools"
+                    android:icon="@drawable/search_50px"
+                    android:title="@string/menu_tools"
+                    android:visible="false"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Faculty">
+        <menu>
+            <item
+
+                android:id="@+id/nav_facultyreg"
+                android:icon="@drawable/training_50px"
+                android:title="Register Faculty"
+                android:visible="true" />
+            <item
+
+                android:id="@+id/nav_facultydonor"
+                android:icon="@drawable/qr_code_26px"
+                android:title="Faculty Donor Reg"
+                android:visible="true" />
+
+        </menu>
+
+    </item>
+    <item android:title="Non Faculty">
+        <menu>
+            <item
+
+                android:id="@+id/nav_nonfacultyreg"
+                android:icon="@drawable/janitor_64px"
+                android:title="Non Register Faculty"
+                android:visible="true" />
+            <item
+
+                android:id="@+id/nav_nonfacultydonorreg"
+                android:icon="@drawable/drop_of_blood_48px"
+                android:title="Non Faculty Donor"
+                android:visible="true" />
+
+        </menu>
+
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/list_50px"
+                android:title="@string/menu_gallery"
+                android:visible="true"/>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_update"
+                android:visible="true" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/graph_report_64px"
+                android:title="@string/menu_report"
+                android:visible="true" />
+        </menu>
+    </item>
+</menu>

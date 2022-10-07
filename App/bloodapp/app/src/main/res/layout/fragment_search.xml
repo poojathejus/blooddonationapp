@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleshake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="@font/roman_font_7"
+        android:gravity="center"
+        android:text="Choose Category"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/roundedbutton_red2"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/Vspin_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4" />
+
+        <Spinner
+            android:id="@+id/Vspin_batch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/roundedbutton_red2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/search_spin_bldgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight=".5" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/roundedbutton_white"
+            android:text="Search"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_students"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

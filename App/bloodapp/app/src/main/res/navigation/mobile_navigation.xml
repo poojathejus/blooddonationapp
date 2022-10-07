@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kemosabe.bloodstore.ui.enroll_student.EnrollStudent"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_enroll" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.kemosabe.bloodstore.ui.searchbyid.SearhByIdFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_searchbyid" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.kemosabe.bloodstore.ui.enrolldonorstudent.DonorStudentFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_donorstudent" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.kemosabe.bloodstore.ui.search.SearchFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.kemosabe.bloodstore.ui.report.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.kemosabe.bloodstore.ui.send.SendFragment"
+        android:label="@string/menu_update"
+        tools:layout="@layout/fragment_send" />
+
+
+    <fragment
+        android:id="@+id/nav_facultyreg"
+        android:name="com.kemosabe.bloodstore.ui.facultyreg.FragFacultyReg"
+        android:label="Register Faculty"
+        tools:layout="@layout/fragment_frag_faculty_reg" />
+
+
+    <fragment
+        android:id="@+id/nav_facultydonor"
+        android:name="com.kemosabe.bloodstore.ui.facultydonor.FragmentFacultyDonor"
+        android:label="Faculty Donor Registration"
+        tools:layout="@layout/fragment_faculty_donor" />
+
+
+    <fragment
+        android:id="@+id/nav_nonfacultyreg"
+        android:name="com.kemosabe.bloodstore.ui.nonstaffreg.FragmentNonStaffReg"
+        android:label="Register Non Faculty"
+        tools:layout="@layout/fragment_non_staff_reg" />
+
+    <fragment
+        android:id="@+id/nav_nonfacultydonorreg"
+        android:name="com.kemosabe.bloodstore.ui.nonfacdonorreg.FragmentNonFacDonorReg"
+        android:label="Register Non Faculty Donor"
+        tools:layout="@layout/fragment_non_fac_donor_reg" />
+
+
+</navigation>
